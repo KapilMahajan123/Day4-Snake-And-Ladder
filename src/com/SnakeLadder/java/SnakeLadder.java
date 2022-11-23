@@ -21,7 +21,7 @@ public class SnakeLadder {
 		 *Then Invoke methods
 		 *Generate numbers in the range 1to6
 		 * print dice roll result
-		 * Checked the condition userposition
+		 * Checked the condition user position
 		 */
 		Random random = new Random();     //craete an random object
 		while (userPosition != 100) {     //Checking position is not equal to 100
@@ -49,11 +49,11 @@ public class SnakeLadder {
 		default:  
 			System.out.println("Snake!");
 			userPosition = userPosition - dice;
-
+			
 			if (userPosition < 0) {
 				userPosition = 0;
 			}
-		}
+		}System.out.println("Number of times user played "+count+" to reach: "+userPosition);  //Print the how many times user played and to reach
 		System.out.println("Presnt Position of the User: " + userPosition); //printing present position
 	}
 	System.out.println("User has rolled "+count+" times to win!"); //printing the user rolled how many time to win
