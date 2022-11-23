@@ -1,5 +1,5 @@
 package com.SnakeLadder.java;
-
+import java.util.*;
 /**
  * 
  * @author Kapil
@@ -18,6 +18,16 @@ public class SnakeLadder {
 		//print the starting position 
 		System.out.println("Player Starting Position will be:~ ");
 		System.out.println(+start);   //just print out to start value
+		
+		/*
+		 *create instance of random class
+		 *Then Invoke methods
+		 *Generate numbers in the range 1to6
+		 * print dice roll result
+		 */
+		Random random = new Random();     //craete an class
+		int dice = random.nextInt(6)+1;   //Invoke methods and generating numbers
+		System.out.println("dice roll result: "+dice);  //print dice roll result
 		
 	}
 
